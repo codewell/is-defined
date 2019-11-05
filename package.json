@@ -1,0 +1,26 @@
+{
+  "name": "@codewell/is-defined",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewell/is-defined.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codewell/is-defined/issues"
+  },
+  "homepage": "https://github.com/codewell/is-defined#readme",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
