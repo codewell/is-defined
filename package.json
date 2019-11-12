@@ -20,7 +20,7 @@
     "url": "https://github.com/codewell/is-defined/issues"
   },
   "homepage": "https://github.com/codewell/is-defined#readme",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^24.9.0"
   }
 }
