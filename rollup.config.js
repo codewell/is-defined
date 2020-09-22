@@ -13,6 +13,7 @@ export default {
   output: {
     file: outputFile,
     format: "cjs",
+    exports: "auto",
   },
   external: [/@babel\/runtime/],
   plugins: [
