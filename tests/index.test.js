@@ -18,6 +18,15 @@ test("null - is not defined", () => {
   expect(isDefined(null)).toBe(false);
 });
 
+test("Variable assigned NaN - is not defined", () => {
+  const foo = NaN;
+  expect(isDefined(foo)).toBe(false);
+});
+
+test("NaN - is not defined", () => {
+  expect(isDefined(NaN)).toBe(false);
+});
+
 test("A defined function - is defined", () => {
   const foo = () => {};
   expect(isDefined(foo)).toBe(true);
