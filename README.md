@@ -13,6 +13,7 @@ import isDefined from '@codewell/is-defined';
 
 isDefined(undefined); // => false
 isDefined(null); // => false
+isDefined(NaN); // => false
 
 isDefined(1); // => true
 isDefined('foo'); // => true
