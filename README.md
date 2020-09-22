@@ -1,11 +1,13 @@
 # @codewell/is-defined
 
 ## Intallation
+
 ```
 npm install @codewell/is-defined
 ```
 
 ## Basic usage
+
 ```JavaScript
 import isDefined from '@codewell/is-defined';
 
@@ -18,4 +20,3 @@ isDefined(() => {})); // => true
 isDefined([]); // => true
 isDefined({}); // => true
 ```
-

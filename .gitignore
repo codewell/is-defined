@@ -2,3 +2,4 @@
 .npmrc
 .env
 node_modules
+lib
