@@ -17,7 +17,7 @@ isDefined(NaN); // => false
 
 isDefined(1); // => true
 isDefined('foo'); // => true
-isDefined(() => {})); // => true
+isDefined(() => {}); // => true
 isDefined([]); // => true
 isDefined({}); // => true
 ```
