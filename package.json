@@ -12,10 +12,7 @@
   },
   "scripts": {
     "test": "jest",
-    "dist": "rollup ./src/index.js --file ./lib/index.js --format cjs",
-    "build": "npm run build:dev && npm run build:prod",
-    "build:prod": "NODE_ENV=production rollup -c",
-    "dry-release": "npm run build && npm pack"
+    "dist": "rollup ./src/index.js --file ./lib/index.js --format cjs"
   },
   "repository": {
     "type": "git",
