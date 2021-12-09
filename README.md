@@ -9,7 +9,7 @@ npm install @codewell/is-defined
 ## Basic usage
 
 ```JavaScript
-import isDefined from '@codewell/is-defined';
+import { isDefined } from '@codewell/is-defined';
 
 isDefined(undefined);     // false
 isDefined(null);          // false
