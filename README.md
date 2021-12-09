@@ -16,8 +16,14 @@ isDefined(null); // => false
 isDefined(NaN); // => false
 
 isDefined(1); // => true
-isDefined('foo'); // => true
+isDefined("foo"); // => true
 isDefined(() => {}); // => true
 isDefined([]); // => true
 isDefined({}); // => true
+
+isDefined(1, "foo", []) // => true
+isDefined(1, "foo", null) // => false
+
+isDefined() // Throws error
+
 ```
