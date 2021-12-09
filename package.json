@@ -1,39 +1,32 @@
 {
   "name": "@codewell/is-defined",
   "version": "2.0.0",
-  "description": "",
+  "description": "Check if values are defined. I mean, why not add more bottom values.",
   "main": "index.js",
+  "keywords": [],
+  "author": "Filip Johansson",
+  "license": "MIT",
+  "homepage": "https://github.com/codewell/is-defined#readme",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "test": "jest",
+    "dist": "rollup ./src/index.js --file ./lib/index.js --format cjs",
     "build": "npm run build:dev && npm run build:prod",
     "build:prod": "NODE_ENV=production rollup -c",
-    "build:dev": "NODE_ENV=development rollup -c",
     "dry-release": "npm run build && npm pack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codewell/is-defined.git"
   },
-  "keywords": [],
-  "author": "Filip Johansson",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/codewell/is-defined/issues"
   },
-  "homepage": "https://github.com/codewell/is-defined#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/preset-env": "^7.9.6",
-    "@rollup/plugin-babel": "^5.2.1",
-    "@rollup/plugin-commonjs": "^15.1.0",
-    "@rollup/plugin-node-resolve": "^9.0.0",
-    "@rollup/plugin-replace": "^2.3.3",
     "jest": "^27.4.3",
-    "rollup": "^2.7.6",
-    "rollup-plugin-peer-deps-external": "^2.2.2"
+    "prettier": "^2.5.1",
+    "rollup": "^2.61.0"
   }
 }
