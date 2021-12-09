@@ -1,4 +1,9 @@
-const isDefined = require("../lib/dev");
+const { isDefined } = require("../lib/index.js");
+
+test("No argument throws type error", () => {
+  const result = () => isDefined();
+  expect(result).toThrow(TypeError);
+});
 
 test("Variable assigned undefined - is not defined", () => {
   const foo = undefined;
@@ -55,4 +60,12 @@ test("[] - is defined", () => {
 
 test("{} - is defined", () => {
   expect(isDefined({})).toBe(true);
+});
+
+test("Multiple arguments", () => {
+  expect(isDefined(1, "a", [], false)).toBe(true);
+});
+
+test("Multiple arguments", () => {
+  expect(isDefined(1, "a", [], undefined)).toBe(false);
 });
