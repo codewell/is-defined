@@ -2,7 +2,7 @@
   "name": "@codewell/is-defined",
   "version": "3.0.0",
   "description": "Check if values are defined. I mean, why not add more bottom values.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [],
   "author": "Filip Johansson",
   "license": "MIT",
